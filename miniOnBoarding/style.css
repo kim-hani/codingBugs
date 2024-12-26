@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* 공통 스타일 */
+
 body,
 html {
     margin: 0;
     padding: 0;
 }
 
-/* 네비게이션 + 메인 섹션에 배경 이미지 공유 */
+
 header,
 #home {
     background: linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.8)),
         url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0lbAXNsQ4reglXWHLk5PJhclsLijlMnSVlUTNo2XZcYyNonc5T4AASGeyWNIZbTx3sr4&usqp=CAU');
-    /* 이미지 경로 삽입 */
+  
     background-size: cover;
-    /* 이미지를 요소 크기에 맞춤 */
+    
     background-position: center;
-    /* 이미지를 중심으로 배치 */
+    
     background-attachment: fixed;
-    /* 배경 이미지 고정 */
+    
     color: white;
 }
 
@@ -60,22 +60,22 @@ header nav a {
 
 header nav a:hover {
     color: #ffd700;
-    /* 호버 시 글자 색상 변경 */
+    
     background-color: rgba(255, 255, 255, 0.1);
-    /* 호버 시 배경 투명 효과 */
+    
     border-radius: 5px;
     /* 모서리를 둥글게 */
 }
 
-/* 메인 섹션 스타일 */
+
 #home {
     height: 50px;
-    /* 메인 섹션 높이 */
+    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
     margin-top: 50px;
-    /* 네비게이션 높이만큼 여백 추가 */
+    
 }
