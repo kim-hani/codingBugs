@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>미니온보딩 14조 팀소개 페이지</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
         html {
@@ -46,6 +47,7 @@
             justify-content: center;
             text-align: center;
             padding: 10px 0px 0px 0px;
+            margin-left: -20px;
             gap: 40px;
         }
 
@@ -61,8 +63,8 @@
             background-color: rgb(227, 233, 227);
             margin: 50px auto 80px auto;
             border-radius: 40px;
-            padding: 20px; 
-            overflow-wrap: break-word; 
+            padding: 20px;
+            overflow-wrap: break-word;
         }
 
         .contact-list {
@@ -93,6 +95,15 @@
         .contact-list a:hover {
             text-decoration: underline;
         }
+
+       
+        .info>a>button {
+            
+            width: 300px;
+            border-radius: 5px;
+            margin-right: 3px;
+            
+        }
     </style>
 </head>
 
@@ -109,7 +120,7 @@
 
     <!-- Main Section -->
     <section id="home" style="background-color: #d3d3d3; padding: 200px; text-align: center;">
-        <h1>미니 온보딩 14조 코딩벌레<br/></h1>
+        <h1>미니 온보딩 14조 코딩벌레<br /></h1>
     </section>
 
     <!-- About Section -->
@@ -117,30 +128,31 @@
         <h2>Team 코딩벌레</h2>
         <div style="margin: 40px 0;">
             <h3>목표</h3>
-            <p>1. 모르고 막막하더라도 집단지성으로 해결해나가기<br/><br/>
+            <p>1. 모르고 막막하더라도 집단지성으로 해결해나가기<br /><br />
 
-                2. 세운 계획을 잘 지키기<br/>
-                <br/>
+                2. 세운 계획을 잘 지키기<br />
+                <br />
 
-                3. 팀원 모두 참여하여 첫 프로젝트를 잘 완성하기<br/><br/>
+                3. 팀원 모두 참여하여 첫 프로젝트를 잘 완성하기<br /><br />
 
-                4. 서로 협력하여 문제점을 잘 해결해 나가는 팀이 되기<br/><br/>
+                4. 서로 협력하여 문제점을 잘 해결해 나가는 팀이 되기<br /><br />
 
-                5. 프로그래밍에 대한 자신감 가지기<br/><br/>
+                5. 프로그래밍에 대한 자신감 가지기<br /><br />
 
-                6. 속도가 느리더라도 올바른 방향을 유지하며 끝까지 완주하기</p>
+                6. 속도가 느리더라도 올바른 방향을 유지하며 끝까지 완주하기
+            </p>
         </div>
         <div style="margin: 40px 0;">
             <h3>규칙</h3>
-            <p>1. 팀원과 소통을 중요시하고 서로 응원하며 끝까지 완주하겠습니다.<br/><br/>
+            <p>1. 팀원과 소통을 중요시하고 서로 응원하며 끝까지 완주하겠습니다.<br /><br />
 
-                2. 프로젝트에 적극적으로 임하겠습니다.<br/><br/>
+                2. 프로젝트에 적극적으로 임하겠습니다.<br /><br />
 
-                3. 프로젝트 관련 새로운 지식이나 정보를 팀원들과 함께 공유하고 피드백 하겠습니다.<br/><br/>
+                3. 프로젝트 관련 새로운 지식이나 정보를 팀원들과 함께 공유하고 피드백 하겠습니다.<br /><br />
 
-                4. 팀원들의 의견을 존중하며 함부로 평가하지 않겠습니다.<br/><br/>
+                4. 팀원들의 의견을 존중하며 함부로 평가하지 않겠습니다.<br /><br />
 
-                5. 자신이 맡은 역할에 충실하겠습니다.<br/><br/>
+                5. 자신이 맡은 역할에 충실하겠습니다.<br /><br />
 
                 6. 각자의 생각이 다를 수 있음을 인정하고 서로를 존중하겠습니다.</p>
         </div>
@@ -162,11 +174,11 @@
             <button onclick="btn5()" class="members_image"></button>
         </div>
         <div class="members_name">
-            <div>구성원 1</div>
-            <div>구성원 2</div>
-            <div>구성원 3</div>
-            <div>구성원 4</div>
-            <div>구성원 5</div>
+            <div>김한이</div>
+            <div>김정호</div>
+            <div>권은서</div>
+            <div>박수진</div>
+            <div>홍수경</div>
         </div>
         <div id="content1" class="members_content">
             안녕하세요
@@ -189,11 +201,71 @@
     <section id="contact" style="padding: 100px; text-align: center;">
         <h2>CONTACT US</h2>
         <ul class="contact-list">
-            <li><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> <a href="https://github.com/kim-hani">김한이</a></li>
-            <li>김정호</li>
-            <li>권은서</li>
-            <li>박수진</li>
-            <li>홍수경</li>
+            <li>
+                <div class="d-flex flex-row mb-3">
+                    <h3>김한이 </h3>
+                    <div class=" info gap-2 col-6 mx-auto">
+                        <a href="https://velog.io/@h_ani99/posts" target="_blank">
+                            <button class="btn btn-primary">blog</button>
+                        </a>
+                        <a href="https://github.com/kim-hani" target="_blank">
+                            <button class="btn btn-secondary">Github</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex flex-row mb-3">
+                    <h3>김정호 </h3>
+                    <div class=" info gap-2 col-6 mx-auto">
+                        <a href="https://www.google.co.kr/?hl=ko" target="_blank">
+                            <button class="btn btn-primary">blog</button>
+                        </a>
+                        <a href="https://github.com/computer-jungho" target="_blank">
+                            <button class="btn btn-secondary">Github</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex flex-row mb-3">
+                    <h3>권은서 </h3>
+                    <div class=" info gap-2 col-6 mx-auto">
+                        <a href="https://rvrlo.tistory.com/notice/7" target="_blank">
+                            <button class="btn btn-primary">blog</button>
+                        </a>
+                        <a href="https://github.com/euuns" target="_blank">
+                            <button class="btn btn-secondary">Github</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex flex-row mb-3">
+                    <h3>박수진 </h3>
+                    <div class=" info gap-2 col-6 mx-auto">
+                        <a href="https://qwerdfjin.github.io/jinblog.github.io/" target="_blank">
+                            <button class="btn btn-primary">blog</button>
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <button class="btn btn-secondary">Github</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex flex-row mb-3">
+                    <h3>홍수경 </h3>
+                    <div class=" info gap-2 col-6 mx-auto">
+                        <a href="https://devlily-1.tistory.com/" target="_blank">
+                            <button class="btn btn-primary">blog</button>
+                        </a>
+                        <a href="https://github.com/seiky17" target="_blank">
+                            <button class="btn btn-secondary">Github</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </section>
 
