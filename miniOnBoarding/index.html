@@ -14,6 +14,27 @@
             scroll-behavior: smooth;
         }
 
+        /*member 섹션 style*/
+        .members {
+            width: 1920px;
+            height: max-content;
+            padding: 70px 0px 140px 0px;
+            background-image: url('image/member_img.jpg');
+        }
+
+        .members_font1 {
+            font-family: "Jua", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 27px;
+        }
+
+        .members_font2 {
+            font-family: "Gothic A1", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         .members_title {
             text-align: center;
             margin: 30px auto 40px auto;
@@ -34,14 +55,15 @@
         .members_image {
             width: 170px;
             height: 170px;
+            box-shadow: 0 0 0 5px transparent;
+            border: none;
             border-radius: 100px;
             margin-right: 30px;
-            background: url('image/test.png');
-            border-color: black;
         }
 
         .members_name {
             font-size: 25px;
+            color: white;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -52,17 +74,24 @@
         }
 
         .members_name div {
-            width: 170px;
+            width: 160px;
             text-align: center;
+        }
+
+        .members_intro1 {
+            display: flex;
+            line-height: 40px;
+            gap: 10px;
+            margin-left: 10px;
         }
 
         .members_content {
             display: none;
             width: 1000px;
-            height: 380px;
-            background-color: rgb(227, 233, 227);
+            height: max-content;
+            background-color: white;
             margin: 50px auto 80px auto;
-            border-radius: 40px;
+            border-radius: 20px;
             padding: 20px;
             overflow-wrap: break-word;
         }
@@ -96,13 +125,17 @@
             text-decoration: underline;
         }
 
-       
         .info>a>button {
-            
+
             width: 300px;
             border-radius: 5px;
             margin-right: 3px;
-            
+
+        }
+        .contact {
+            background-image: url('./image/CONTACT_US_01.jpg');
+            background-position: center;
+            background-size: cover;
         }
     </style>
 </head>
@@ -160,50 +193,275 @@
 
     <!-- Members Section -->
     <section id="members">
-        <div class="members_title">
-            <h1 style="font-size: 60px;">MEMBERS</h1>
-            <h1 style="font-weight: bold;">구성원</h1>
-            <hr>
-        </div>
+        <div class="members">
+            <div class="members_title">
+                <h1 style="font-size: 60px; font-weight: 600; color: white;">MEMBERS</h1>
+                <h1 style="font-weight: 500; color: white; font-size: 33px;">코딩벌레 구성원</h1>
+                <hr>
+            </div>
 
-        <div class="members_button">
-            <button onclick="btn1()" class="members_image"></button>
-            <button onclick="btn2()" class="members_image"></button>
-            <button onclick="btn3()" class="members_image"></button>
-            <button onclick="btn4()" class="members_image"></button>
-            <button onclick="btn5()" class="members_image"></button>
-        </div>
-        <div class="members_name">
-            <div>김한이</div>
-            <div>김정호</div>
-            <div>권은서</div>
-            <div>박수진</div>
-            <div>홍수경</div>
-        </div>
-        <div id="content1" class="members_content">
-            안녕하세요
-        </div>
-        <div id="content2" class="members_content">
-            반갑습니다
-        </div>
-        <div id="content3" class="members_content">
-            하이용
-        </div>
-        <div id="content4" class="members_content">
-            hi
-        </div>
-        <div id="content5" class="members_content">
-            goodbye
+            <div class="members_button">
+                <button onclick="btn1()" class="members_image" style="background: url('image/member1.jpg')"></button>
+                <button onclick="btn2()" class="members_image" style="background: url('image/member2.jpg')"></button>
+                <button onclick="btn3()" class="members_image" style="background: url('image/member3.jpg')"></button>
+                <button onclick="btn4()" class="members_image" style="background: url('image/member4.jpg')"></button>
+                <button onclick="btn5()" class="members_image" style="background: url('image/member5.jpg')"></button>
+            </div>
+            <div class="members_name">
+                <div>김한이</div>
+                <div>김정호</div>
+                <div>권은서</div>
+                <div>박수진</div>
+                <div>홍수경</div>
+            </div>
+
+            <!-- 김한이 소개 내용 -->
+            <div id="content1" class="members_content">
+                <div style="font-size: 20px; font-weight: 600; line-height: 50px; margin-left: 10px;">
+                    100m 전력질주보다 100km 마라톤을 한다는 자세로 임하겠습니다.
+                </div>
+                <div class="members_intro1">
+                    <div style="font-size: 28px; font-weight: 1000;">
+                        김한이
+                    </div>
+                    <div style="font-size: 26px; font-weight: 600; color: rgb(166, 112, 216); line-height: 40px;">
+                        ENTP
+                    </div>
+                </div>
+                <br>
+                <div class="members_font1">
+                    🙋‍♂️소개
+                </div>
+                <p></p>
+                <ul style="list-style-type: none; padding-left:0; margin-left:0; font-size: 20px;"
+                    class="members_font2">
+                    <li>
+                        소프트웨어를 전공하고 이번 학기를 끝으로 졸업하게 되었습니다.
+                    </li>
+                    <li>
+                        아직 부족한 점이 많다고 느껴 프로젝트와 개인공부를 하며 실력을 향상 시키고 싶습니다.
+                    </li>
+                    <p></p>
+                    <li>
+                        성격은 쾌활하며 넉살이 좋은 편입니다.
+                        가끔 덤벙대고 해야할 일을 까먹는 일도 종종 있지만 맡은 일은 꼭
+                    </li>
+                    <li>
+                        책임감 있게 완수합니다.
+                    </li>
+                </ul>
+                <div class="members_intro2">
+                    <br>
+                    <div class="members_font1">
+                        💪TMI
+                    </div>
+                    <p></p>
+                    <ul style="list-style-type: none; padding-left:0; margin-left:0; font-size: 20px;"
+                        class="members_font2">
+                        <li>
+                            좋아하는 것 : 헬스 , 스키 , 좋은 안주에 먹는 술
+                        </li>
+                        <p></p>
+                        <li>
+                            싫어하는 것 : 어색한 자리 , 게으름, 무기력한 것
+                        </li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+
+            <!-- 김정호 소개 내용 -->
+            <div id="content2" class="members_content">
+                <div style="font-size: 20px; font-weight: 600; line-height: 50px; margin-left: 10px;">
+                    호기심이 많고 공상하는 것을 좋아합니다.
+                </div>
+                <div class="members_intro1">
+                    <div style="font-size: 28px; font-weight: 1000;">
+                        김정호
+                    </div>
+                    <div style="font-size: 26px; font-weight: 600; color: rgb(166, 112, 216); line-height: 40px;">
+                        INTP
+                    </div>
+                </div>
+                <br>
+                <div class="members_font1">
+                    👍소개
+                </div>
+                <p></p>
+                <div style="font-size: 20px;" class="members_font2">
+                    저는 타인의 말을 잘 경청하고, 새로운 것을 쉽게 받아들이고 잘 적용합니다.
+                </div>
+                <div class="members_intro2">
+                    <br>
+                    <div class="members_font1">
+                        🎯TMI
+                    </div>
+                    <p></p>
+                    <ul style="list-style-type: none; padding-left:0; margin-left:0; font-size: 20px;"
+                        class="members_font2">
+                        <li>
+                            음식, 드라마, 만화 등 하나의 분야에 꽂히면 계속 그것만 합니다
+                        </li>
+                        <p></p>
+                        <li>
+                            혼자 사람 많은 곳 가는 것을 좋아해서 종종 혼자 사람 많은 지역 가서 시간을 보내곤 합니다.
+                        </li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+
+            <!-- 권은서 소개 내용 -->
+            <div id="content3" class="members_content">
+                <div style="font-size: 20px; font-weight: 600; line-height: 50px; margin-left: 10px;">
+                    항상 긍정적으로 임하겠습니다.
+                </div>
+                <div class="members_intro1">
+                    <div style="font-size: 28px; font-weight: 1000;">
+                        권은서
+                    </div>
+                    <div style="font-size: 26px; font-weight: 600; color: rgb(240, 198, 60); line-height: 40px;">
+                        ISTP
+                    </div>
+                </div>
+                <br>
+                <div class="members_font1">
+                    📖소개
+                </div>
+                <p></p>
+                <ul style="list-style-type: none; padding-left:0; margin-left:0; font-size: 20px;"
+                    class="members_font2">
+                    <li>
+                        단순히 실습을 바로 하기보다는 이론을 자세히 알고 넘어가는 것을 좋아합니다.
+                    </li>
+                    <li>
+                        그러다 보니 속도는 남들보다 뒤쳐지기도 했습니다.
+                    </li>
+                    <p></p>
+                    <li>
+                        하지만 속도가 한번 나기 시작하면 더 좋은 성과를 내는 데 도움이 되었습니다.
+                    </li>
+                    <li>
+                        늦더라도 포기하지 않고 도전해 성공적으로 마무리하고 싶습니다!
+                    </li>
+                </ul>
+                <div class="members_intro2">
+                    <br>
+                    <div class="members_font1">
+                        ⚾TMI
+                    </div>
+                    <p></p>
+                    <div style="font-size: 20px;" class="members_font2">
+                        야구를 아주 많이 좋아합니다. 야구 보실래요?😆
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!-- 박수진 소개 내용 -->
+            <div id="content4" class="members_content">
+                <div style="font-size: 20px; font-weight: 600; line-height: 50px; margin-left: 10px;">
+                    하하, 화이팅입니다!
+                </div>
+                <div class="members_intro1">
+                    <div style="font-size: 28px; font-weight: 1000;">
+                        박수진
+                    </div>
+                    <div style="font-size: 26px; font-weight: 600; line-height: 40px;">
+                        <span style="color: rgb(166, 112, 216);">INTP</span> / <span
+                            style="color: rgb(74, 155, 71);">INFP</span>
+                    </div>
+                </div>
+                <br>
+                <div class="members_font1">
+                    📋소개
+                </div>
+                <p></p>
+                <ul style="list-style-type: none; padding-left:0; margin-left:0; font-size: 20px;"
+                    class="members_font2">
+                    <li>
+                        한 가지 일에 몰두하는 성격입니다.
+                    </li>
+                    <li>
+                        계획된 일에 대한 집중력과 끈기가 강하지만 한 가지 일에 집중해 다른 일을 놓칠 때도 있습니다.
+                    </li>
+                    <li>
+                        양날의 검과 같은 제 성격을 좋은 쪽으로 보완하기 위해 항상 노력하고 있습니다.
+                    </li>
+                </ul>
+                <div class="members_intro2">
+                    <br>
+                    <div class="members_font1">
+                        🍜TMI
+                    </div>
+                    <p></p>
+                    <div style="font-size: 20px;" class="members_font2">
+                        음식 하나에 꽂히면 한달동안 같은 음식만 먹습니다.
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!-- 홍수경 소개 내용 -->
+            <div id="content5" class="members_content">
+                <div style="font-size: 20px; font-weight: 600; line-height: 50px; margin-left: 10px;">
+                    성실한 사람이 되자!
+                </div>
+                <div class="members_intro1">
+                    <div style="font-size: 28px; font-weight: 1000;">
+                        홍수경
+                    </div>
+                    <div style="font-size: 26px; font-weight: 600; color: rgb(74, 155, 71); line-height: 40px;">
+                        INFP
+                    </div>
+                </div>
+                <br>
+                <div class="members_font1">
+                    🔎소개
+                </div>
+                <p></p>
+                <ul style="list-style-type: none; padding-left:0; margin-left:0; font-size: 20px;"
+                    class="members_font2">
+                    <li>
+                        저는 풀리지 않는 문제가 있으면 풀 때까지 그 문제에 집중합니다.
+                    </li>
+                    <p></p>
+                    <li>
+                        그리고 저는 제가 세운 계획을 잘 실천하지 못할 때가 많은데요, 그래서 사소한 계획부터 시작해 차근차근
+                    </li>
+                    <li>
+                        실천해 나가고 있습니다.
+                    </li>
+                </ul>
+                <div class="members_intro2">
+                    <br>
+                    <div class="members_font1">
+                        🎮TMI
+                    </div>
+                    <p></p>
+                    <div style="font-size: 20px;" class="members_font2">
+                        저는 게임을 좋아해서 쉴 때나 스트레스를 많이 받을 때 게임으로 휴식을 취합니다.
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="padding: 100px; text-align: center;">
-        <h2>CONTACT US</h2>
-        <ul class="contact-list">
+    <section class="contact" id="contact" style="padding: 100px; text-align: center;">
+        <h2 onclick="opencontact()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-person-rolodex" viewBox="0 0 16 16">
+                <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                <path
+                    d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1z" />
+            </svg> CONTACT US
+        </h2>
+        <ul id="contact-click" class="contact-list">
             <li>
                 <div class="d-flex flex-row mb-3">
-                    <h3>김한이 </h3>
+                    <h3>🐶김한이🐶 </h3>
                     <div class=" info gap-2 col-6 mx-auto">
                         <a href="https://velog.io/@h_ani99/posts" target="_blank">
                             <button class="btn btn-primary">blog</button>
@@ -216,7 +474,7 @@
             </li>
             <li>
                 <div class="d-flex flex-row mb-3">
-                    <h3>김정호 </h3>
+                    <h3>👑김정호👑 </h3>
                     <div class=" info gap-2 col-6 mx-auto">
                         <a href="https://www.google.co.kr/?hl=ko" target="_blank">
                             <button class="btn btn-primary">blog</button>
@@ -229,7 +487,7 @@
             </li>
             <li>
                 <div class="d-flex flex-row mb-3">
-                    <h3>권은서 </h3>
+                    <h3>⚾권은서⚾ </h3>
                     <div class=" info gap-2 col-6 mx-auto">
                         <a href="https://rvrlo.tistory.com/notice/7" target="_blank">
                             <button class="btn btn-primary">blog</button>
@@ -242,7 +500,7 @@
             </li>
             <li>
                 <div class="d-flex flex-row mb-3">
-                    <h3>박수진 </h3>
+                    <h3>🍔박수진🍔 </h3>
                     <div class=" info gap-2 col-6 mx-auto">
                         <a href="https://qwerdfjin.github.io/jinblog.github.io/" target="_blank">
                             <button class="btn btn-primary">blog</button>
@@ -255,7 +513,7 @@
             </li>
             <li>
                 <div class="d-flex flex-row mb-3">
-                    <h3>홍수경 </h3>
+                    <h3>🎮홍수경🎮 </h3>
                     <div class=" info gap-2 col-6 mx-auto">
                         <a href="https://devlily-1.tistory.com/" target="_blank">
                             <button class="btn btn-primary">blog</button>
@@ -277,8 +535,9 @@
     <script>
         function btn1() {
             $('#content1').fadeToggle().siblings('.members_content').hide();
-        }
+            $()
 
+        }
         function btn2() {
             $('#content2').fadeToggle().siblings('.members_content').hide();
         }
@@ -294,6 +553,9 @@
         function btn5() {
             $('#content5').fadeToggle().siblings('.members_content').hide();
         }
+        function opencontact() {
+                $('#contact-click').toggle();
+            }
     </script>
 </body>
 
