@@ -17,7 +17,7 @@
         /*about 섹션 style*/
         .about_us {
 
-            margin: 0 auto;
+            margin: 150px auto 0 auto;
         }
 
         .team {
@@ -233,64 +233,83 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#about">CODING BUG</a>
-            <a href="#members">MEMBERS</a>
-            <a href="#contact">CONTACT US</a>
-        </nav>
-    </header>
 
     <!-- Main Section -->
-    <section id="home" style="background-color: #d3d3d3; padding: 200px;">
+    <section id="home" style="background-color: #000;">
+        <!-- Navigation -->
+
+
+        <div class="main-slide">
+            <header>
+                <nav>
+                    <a href="#home">HOME</a>
+                    <a href="#about">CODING BUG</a>
+                    <a href="#members">MEMBERS</a>
+                    <a href="#contact">CONTACT US</a>
+                </nav>
+            </header>
+            <div class="slide-box">
+                <div class="slide-obx__main">
+                    <img src="./image/slide1.jpg" alt="">
+                </div>
+                <div class="slide-obx__main">
+                    <img src="./image/slide2.jpg" alt="">
+                </div>
+                <div class="slide-obx__main>">
+                    <img src="./image/slide3.jpg" alt="">
+                </div>
+                <div class="slide-obx__main">
+                    <img src="./image/slide4.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
     <!-- About Section -->
     <section id="about"></section>
-        <section class="about_us">
-            <div class="team">
-                <h1>코딩벌레</h1>
-                <h4>책벌레, 공부벌레, 일벌레… 뭔가에 집중해서 열심히 하는 사람들에게 '벌레'라는 이름을 붙입니다.<br>
-                    부정적인 의미가 될 수 있겠지만, 우리는 그 의미를 긍정적으로 만들 것 입니다.<br>
-                    5명의 전공자가 모여 프로그래밍에 몰두하는 우리는 '코딩벌레'입니다.</h4>
-            </div>
+    <section class="about_us">
+        <div class="team">
+            <h1>코딩벌레</h1>
+            <h4>책벌레, 공부벌레, 일벌레… 뭔가에 집중해서 열심히 하는 사람들에게 '벌레'라는 이름을 붙입니다.<br>
+                부정적인 의미가 될 수 있겠지만, 우리는 그 의미를 긍정적으로 만들 것 입니다.<br>
+                5명의 전공자가 모여 프로그래밍에 몰두하는 우리는 '코딩벌레'입니다.</h4>
+        </div>
 
-            <section class="team_purpose">
-                <div class="container text-center">
-                    <div class="col">
-                        <button onclick="aboutus_list_btn(1)" class="aboutus_list">"우리는 도전합니다."</button>
-                        <ul id="plan_list">
-                            <li>1. 알고리즘 1일 2문제 풀이</li>
-                            <li>2. 매일 출석하여 강의 시청</li>
-                            <li>3. TIL 빠지지 않고 작성</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <button onclick="aboutus_list_btn(2)" class="aboutus_list">"우리는 약속합니다."</button>
-                        <ul id="rule_list">
-                            <li>1. 소통을 중시하고, 끝까지 완주하겠습니다.</li>
-                            <li>2. 프로젝트에 적극적으로 임하겠습니다.</li>
-                            <li>3. 새로운 지식이나 정보는 다같이 공유하겠습니다.</li>
-                            <li>4. 팀원의 의견을 존중하며 평가하지 않겠습니다.</li>
-                            <li>5. 자신이 맡은 역할에 충실하겠습니다.</li>
-                            <li>6. 생각이 다름을 인정하고 서로를 존중하겠습니다.</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <button onclick="aboutus_list_btn(3)" class="aboutus_list">"우리는 기대합니다."</button>
-                        <ul id="goal_list">
-                            <li>1. 팀원 모두 참여하여 프로젝트 완성하기</li>
-                            <li>2. 서로 협력하여 문제를 잘 해결하기</li>
-                            <li>3. 프로그래밍에 대한 자신감 가지기</li>
-                            <li>4. 조금 늦더라도 올바른 방향으로 끝까지 완주하기</li>
-                        </ul>
-                    </div>
+        <section class="team_purpose">
+            <div class="container text-center">
+                <div class="col">
+                    <button onclick="aboutus_list_btn(1)" class="aboutus_list">"우리는 도전합니다."</button>
+                    <ul id="plan_list">
+                        <li>1. 알고리즘 1일 2문제 풀이</li>
+                        <li>2. 매일 출석하여 강의 시청</li>
+                        <li>3. TIL 빠지지 않고 작성</li>
+                    </ul>
                 </div>
-            </section>
+                <div class="col">
+                    <button onclick="aboutus_list_btn(2)" class="aboutus_list">"우리는 약속합니다."</button>
+                    <ul id="rule_list">
+                        <li>1. 소통을 중시하고, 끝까지 완주하겠습니다.</li>
+                        <li>2. 프로젝트에 적극적으로 임하겠습니다.</li>
+                        <li>3. 새로운 지식이나 정보는 다같이 공유하겠습니다.</li>
+                        <li>4. 팀원의 의견을 존중하며 평가하지 않겠습니다.</li>
+                        <li>5. 자신이 맡은 역할에 충실하겠습니다.</li>
+                        <li>6. 생각이 다름을 인정하고 서로를 존중하겠습니다.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <button onclick="aboutus_list_btn(3)" class="aboutus_list">"우리는 기대합니다."</button>
+                    <ul id="goal_list">
+                        <li>1. 팀원 모두 참여하여 프로젝트 완성하기</li>
+                        <li>2. 서로 협력하여 문제를 잘 해결하기</li>
+                        <li>3. 프로그래밍에 대한 자신감 가지기</li>
+                        <li>4. 조금 늦더라도 올바른 방향으로 끝까지 완주하기</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+    </section>
     </section>
 
     <!-- Members Section -->
@@ -684,6 +703,28 @@
         function opencontact() {
             $('#contact-click').toggle();
         }
+
+
+
+        // main slider
+        const CAROUSEL_LENGTH = document.querySelectorAll(".slide-obx__main").length - 1;
+        let current = 0;
+
+        const $carousel = document.querySelector(".slide-box");
+
+        const slideEvent = () => {
+            if (current !== (CAROUSEL_LENGTH + 1)) {
+                $carousel.style.transform = `translateX(${(current + 1) * -101}%)`;
+                $carousel.style.transitionDuration = '500ms';
+                current++;
+            } else {
+                current = 0;
+                $carousel.style.transform = `translateX(0px)`;
+            }
+        };
+
+        setInterval(slideEvent, 1500);
+
     </script>
 </body>
 
