@@ -14,6 +14,96 @@
             scroll-behavior: smooth;
         }
 
+        /*about 섹션 style*/
+        .about_us {
+
+            margin: 150px auto 0 auto;
+        }
+
+        .team {
+            margin: 60px auto 70px auto;
+
+            text-align: center;
+        }
+
+        .team>h1 {
+            width: fit-content;
+            font-size: 70px;
+            font-weight: 700;
+            margin: auto;
+            position: relative;
+        }
+
+        .team>h4 {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .col {
+            margin: 0px auto 60px auto;
+            width: 850px;
+        }
+
+        .team_purpose {
+            padding-top: 50px;
+        }
+
+        .team_purpose .col>p {
+            background-color: white;
+            border: none;
+            width: 750px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .team_purpose .col>p:hover {
+            color: #66a164;
+            border-bottom: 1px solid #66a164;
+            transition: 0.6s;
+        }
+
+
+
+        .about_us ul {
+            display: none;
+            list-style: none;
+            text-align: left;
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            margin: 20px auto 10px auto;
+            width: 750px;
+            padding: 30px 0px 30px 40px;
+            font-size: 18.5px;
+        }
+
+        .aboutus_list {
+            border: none;
+            background-color: white;
+            padding-bottom: 40px;
+            width: 500px;
+            height: 30px;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .aboutus_list:hover {
+            color: #66a164;
+            border-bottom: 1px solid #66a164;
+            transition: 0.3s;
+        }
+
+        .aboutus_list:focus {
+            color: #66a164;
+            border-bottom: 1px solid #66a164;
+        }
+
+        .aboutus_list:active {
+            color: #a0df9d;
+            border-bottom: 1px solid #a0df9d;
+            transition: 0.3s;
+        }
+
+
         /*member 섹션 style*/
         .members {
             width: 1920px;
@@ -96,6 +186,7 @@
             overflow-wrap: break-word;
         }
 
+        /*contact 섹션 style*/
         .contact-list {
             list-style: none;
             padding: 0;
@@ -132,6 +223,7 @@
             margin-right: 3px;
 
         }
+
         .contact {
             background-image: url('./image/CONTACT_US_01.jpg');
             background-position: center;
@@ -141,54 +233,83 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#about">CODING BUG</a>
-            <a href="#members">MEMBERS</a>
-            <a href="#contact">CONTACT US</a>
-        </nav>
-    </header>
 
     <!-- Main Section -->
-    <section id="home" style="background-color: #d3d3d3; padding: 200px; text-align: center;">
-        <h1>미니 온보딩 14조 코딩벌레<br /></h1>
+    <section id="home" style="background-color: #000;">
+        <!-- Navigation -->
+
+
+        <div class="main-slide">
+            <header>
+                <nav>
+                    <a href="#home">HOME</a>
+                    <a href="#about">CODING BUG</a>
+                    <a href="#members">MEMBERS</a>
+                    <a href="#contact">CONTACT US</a>
+                </nav>
+            </header>
+            <div class="slide-box">
+                <div class="slide-obx__main">
+                    <img src="./image/slide1.jpg" alt="">
+                </div>
+                <div class="slide-obx__main">
+                    <img src="./image/slide2.jpg" alt="">
+                </div>
+                <div class="slide-obx__main>">
+                    <img src="./image/slide3.jpg" alt="">
+                </div>
+                <div class="slide-obx__main">
+                    <img src="./image/slide4.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <!-- About Section -->
-    <section id="about" style="padding: 100px; text-align: center;">
-        <h2>Team 코딩벌레</h2>
-        <div style="margin: 40px 0;">
-            <h3>목표</h3>
-            <p>1. 모르고 막막하더라도 집단지성으로 해결해나가기<br /><br />
-
-                2. 세운 계획을 잘 지키기<br />
-                <br />
-
-                3. 팀원 모두 참여하여 첫 프로젝트를 잘 완성하기<br /><br />
-
-                4. 서로 협력하여 문제점을 잘 해결해 나가는 팀이 되기<br /><br />
-
-                5. 프로그래밍에 대한 자신감 가지기<br /><br />
-
-                6. 속도가 느리더라도 올바른 방향을 유지하며 끝까지 완주하기
-            </p>
+    <section id="about"></section>
+    <section class="about_us">
+        <div class="team">
+            <h1>코딩벌레</h1>
+            <h4>책벌레, 공부벌레, 일벌레… 뭔가에 집중해서 열심히 하는 사람들에게 '벌레'라는 이름을 붙입니다.<br>
+                부정적인 의미가 될 수 있겠지만, 우리는 그 의미를 긍정적으로 만들 것 입니다.<br>
+                5명의 전공자가 모여 프로그래밍에 몰두하는 우리는 '코딩벌레'입니다.</h4>
         </div>
-        <div style="margin: 40px 0;">
-            <h3>규칙</h3>
-            <p>1. 팀원과 소통을 중요시하고 서로 응원하며 끝까지 완주하겠습니다.<br /><br />
 
-                2. 프로젝트에 적극적으로 임하겠습니다.<br /><br />
-
-                3. 프로젝트 관련 새로운 지식이나 정보를 팀원들과 함께 공유하고 피드백 하겠습니다.<br /><br />
-
-                4. 팀원들의 의견을 존중하며 함부로 평가하지 않겠습니다.<br /><br />
-
-                5. 자신이 맡은 역할에 충실하겠습니다.<br /><br />
-
-                6. 각자의 생각이 다를 수 있음을 인정하고 서로를 존중하겠습니다.</p>
-        </div>
+        <section class="team_purpose">
+            <div class="container text-center">
+                <div class="col">
+                    <button onclick="aboutus_list_btn(1)" class="aboutus_list">"우리는 도전합니다."</button>
+                    <ul id="plan_list">
+                        <li>1. 알고리즘 1일 2문제 풀이</li>
+                        <li>2. 매일 출석하여 강의 시청</li>
+                        <li>3. TIL 빠지지 않고 작성</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <button onclick="aboutus_list_btn(2)" class="aboutus_list">"우리는 약속합니다."</button>
+                    <ul id="rule_list">
+                        <li>1. 소통을 중시하고, 끝까지 완주하겠습니다.</li>
+                        <li>2. 프로젝트에 적극적으로 임하겠습니다.</li>
+                        <li>3. 새로운 지식이나 정보는 다같이 공유하겠습니다.</li>
+                        <li>4. 팀원의 의견을 존중하며 평가하지 않겠습니다.</li>
+                        <li>5. 자신이 맡은 역할에 충실하겠습니다.</li>
+                        <li>6. 생각이 다름을 인정하고 서로를 존중하겠습니다.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <button onclick="aboutus_list_btn(3)" class="aboutus_list">"우리는 기대합니다."</button>
+                    <ul id="goal_list">
+                        <li>1. 팀원 모두 참여하여 프로젝트 완성하기</li>
+                        <li>2. 서로 협력하여 문제를 잘 해결하기</li>
+                        <li>3. 프로그래밍에 대한 자신감 가지기</li>
+                        <li>4. 조금 늦더라도 올바른 방향으로 끝까지 완주하기</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
     </section>
 
     <!-- Members Section -->
@@ -486,7 +607,7 @@
                 </div>
             </li>
             <li>
-                <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-row mb-3" style="margin-left: 15px" ;>
                     <h3>⚾권은서⚾ </h3>
                     <div class=" info gap-2 col-6 mx-auto">
                         <a href="https://rvrlo.tistory.com/notice/7" target="_blank">
@@ -533,6 +654,32 @@
     </footer>
 
     <script>
+        //about us 
+        function aboutus_list_btn(n) {
+            if (n == 1) {
+                if ($('#plan_list').css('display') == 'none')
+                    $('#plan_list').show();
+                else {
+                    $('#plan_list').hide();
+                }
+
+            } else if (n == 2) {
+                if ($('#rule_list').css('display') == 'none')
+                    $('#rule_list').show();
+                else {
+                    $('#rule_list').hide();
+                }
+
+            } else if (n == 3) {
+                if ($('#goal_list').css('display') == 'none')
+                    $('#goal_list').show();
+                else {
+                    $('#goal_list').hide();
+                }
+            }
+        };
+
+        // member
         function btn1() {
             $('#content1').fadeToggle().siblings('.members_content').hide();
             $()
@@ -554,8 +701,30 @@
             $('#content5').fadeToggle().siblings('.members_content').hide();
         }
         function opencontact() {
-                $('#contact-click').toggle();
+            $('#contact-click').toggle();
+        }
+
+
+
+        // main slider
+        const CAROUSEL_LENGTH = document.querySelectorAll(".slide-obx__main").length - 1;
+        let current = 0;
+
+        const $carousel = document.querySelector(".slide-box");
+
+        const slideEvent = () => {
+            if (current !== (CAROUSEL_LENGTH + 1)) {
+                $carousel.style.transform = `translateX(${(current + 1) * -101}%)`;
+                $carousel.style.transitionDuration = '500ms';
+                current++;
+            } else {
+                current = 0;
+                $carousel.style.transform = `translateX(0px)`;
             }
+        };
+
+        setInterval(slideEvent, 1500);
+
     </script>
 </body>
 
